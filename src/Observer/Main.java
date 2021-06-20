@@ -1,8 +1,19 @@
 package Observer;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
+
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("What is your preference News?");
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         //publisher-> subject
         //subscriber-> observer
@@ -11,7 +22,7 @@ public class Main {
 //        creating observer object
         Observer observer1 = new Type1Observer();
         Observer observer2 = new Type2Observer();
-//        Observer observer3 = new Type3Observer();
+
 
         Subject subject = new Subject();
         subject.subscribe(observer1);

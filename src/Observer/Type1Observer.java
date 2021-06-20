@@ -1,5 +1,8 @@
 package Observer;
 
+import java.util.Scanner;
+
+
 //reading the news
 public class Type1Observer implements Observer{
 
