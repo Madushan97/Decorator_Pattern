@@ -8,6 +8,7 @@ public class Main {
         //subscriber-> observer
         //type of observers-> NewsReader, FoodWrapper
 
+//        creating observer object
         Observer observer1 = new Type1Observer();
         Observer observer2 = new Type2Observer();
 //        Observer observer3 = new Type3Observer();
